@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+{% block content %}
+        <div class="icon">&#9728;</div> <!-- Sun icon -->
+        <h1>{{ city }}</h1>
+        <h2>{{ temp }} &#8451;</h2>
+        <div class="btn-group" role="group">
+            <button type="button" class="btn btn-outline-primary" onclick="location.href='./random'">Check Other Places</button>
+            <button type="button" class="btn btn-outline-primary" onclick="location.href='.'">Your Location</button>
+            <a href="{% url 'index' %}" class="btn btn-outline-primary">Go Home</a>
+        </div>
+{% endblock %}
